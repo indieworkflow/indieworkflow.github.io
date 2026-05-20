@@ -13,7 +13,6 @@
 .navbar {
   position: sticky;
   top: 0;
-  left: 0;
   z-index: 999;
   background: #0b1220;
   padding: 25px 40px;
@@ -23,8 +22,7 @@
   box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 
   width: 100%;
-  left: 0;
-  right: 0;
+  box-sizing: border-box;   /* 🔥 OVO RJEŠAVA SCROLL */
 }
 
 /* logo dio */
