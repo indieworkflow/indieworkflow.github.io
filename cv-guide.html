@@ -6,6 +6,56 @@
   <meta name="description" content="Learn how to write a modern CV that gets interviews in 2026. Step-by-step CV writing guide with tips and examples.">
 
   <style>
+
+      /* ===== NAVBAR ===== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0b1220;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+
+  width: 100%;
+  box-sizing: border-box;   /* 🔥 OVO RJEŠAVA SCROLL */
+}
+
+/* logo dio */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-logo span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e6f0ff;
+  letter-spacing: 1px;
+}
+
+/* linkovi desno */
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #c7d8ff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #5aa3ff;
+}
+    
     body {
       font-family: Arial, Helvetica, sans-serif;
       background:#f5f7fb;
@@ -41,10 +91,32 @@
 .cta a:hover {
   text-decoration: underline;
 }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+   }
   </style>
 </head>
 
 <body>
+
+  <nav class="navbar">
+
+  <a href="index.html" class="nav-logo">
+    <img src="favicon.png" alt="IndieWorkflow logo">
+    <span>IndieWorkflow</span>
+  </a>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="tools.html">Tools</a>
+    <a href="about.html">About</a>
+  </div>
+
+</nav>
 
 <a href="blog.html">← Back to Blog</a>
 
