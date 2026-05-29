@@ -81,6 +81,48 @@
       margin:20px 0;
     }
 
+    /* ===== BLOG GRID ===== */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ===== BLOG CARD ===== */
+
+.blog-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 25px;
+}
+
+.blog-content h2 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.blog-content p {
+  color: #555;
+}
+
     .container {
       max-width: 900px;
       margin: auto;
@@ -184,18 +226,66 @@
 <p>Guides, tutorials and strategies to help you get hired and earn online.</p>
 
 <div class="post">
-  <h2><a href="cv-guide.html">How to write a CV in 2026</a></h2>
-  <p>Step-by-step guide to writing a modern CV that gets interviews.</p>
-</div>
+  <div class="blog-grid">
 
-<div class="post">
-  <h2><a href="remote-jobs-guide.html">How to get a remote job with no experience</a></h2>
-  <p>Practical steps to land your first remote role.</p>
-</div>
+  <div class="blog-card">
 
-<div class="post">
-  <h2><a href="earn-money-online-2026.html">Best ways to earn money online in 2026</a></h2>
-  <p>Realistic methods for building online income.</p>
+    <img class="blog-image"
+    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+    alt="CV writing">
+
+    <div class="blog-content">
+      <h2>
+        <a href="cv-guide.html">How to Write a CV in 2026</a>
+      </h2>
+
+      <p>
+        Step-by-step guide to writing a modern CV that gets interviews.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="blog-card">
+
+    <img class="blog-image"
+    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+    alt="Remote work">
+
+    <div class="blog-content">
+      <h2>
+        <a href="remote-jobs-guide.html">
+          How to Get a Remote Job with No Experience
+        </a>
+      </h2>
+
+      <p>
+        Practical steps to land your first remote role.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="blog-card">
+
+    <img class="blog-image"
+    src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop"
+    alt="Earn online">
+
+    <div class="blog-content">
+      <h2>
+        <a href="earn-money-online-2026.html">
+          Best Ways to Earn Money Online in 2026
+        </a>
+      </h2>
+
+      <p>
+        Realistic methods for building online income.
+      </p>
+    </div>
+
+  </div>
+
 </div>
 
   </div>
