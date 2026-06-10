@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>About - IndieWorkflow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="description" content="Learn more about IndieWorkflow, our mission and the tools, guides and software we are building.">
 
@@ -196,6 +197,79 @@ a {
   text-align: center;
   color: #7f93b8;
   font-size: 14px;
+}
+
+    /* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .article-card {
+    padding: 25px 20px;
+  }
+
+  .featured-image {
+    height: 220px;
+  }
+
+  .post-meta {
+    text-align: center;
+  }
+
+  .back-button {
+    display: block;
+    text-align: center;
+  }
+
+  .cta {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left p {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
 }
 
   </style>
